@@ -2,13 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     </head>
     <body>
-        <h1>
-            TEXT
-        </h1>
+        <div class="container fullcenter">
+            <div class="row">
+                <div class="col-sm-4" style="text-align: right;" id="centered">
+                    <img src="img/logo.png" width="150px" height="150px">
+                </div>
+                <div class="col-sm-8" style="text-align: left;" id="centered">
+                    <h1 id="shadowed">WELCOME TO</br>NEWZFLASH!</h1>
+                </div>
+            </div>
+            </br>
+            <form action='./generate'>
+                <label>Keywords:</label>
+                <input type="text" class="form-control form-control-lg" name="q" placeholder="Search for news!">
+                </br>
+                <label>Country:</label>
+                <select class="form-control" name="country">
+                    <option>USA</option>
+                    <option>Sweden</option>
+                    <option>China</option>
+                </select>
+            </form>
+            </br>
+            <button type="button" class="btn">Generate random article</button>
+        </div>
     </body>
 </html>
