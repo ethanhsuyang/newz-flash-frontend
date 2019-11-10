@@ -18,19 +18,27 @@
                 </div>
             </div>
             </br>
-            <form action='./generate'>
-                <label>Keywords:</label>
-                <input type="text" class="form-control form-control-lg" name="q" placeholder="Search for news!">
-                </br>
-                <label>Country:</label>
-                <select class="form-control" name="country">
-                    <option>USA</option>
-                    <option>Sweden</option>
-                    <option>China</option>
-                </select>
+            <form action='./home.html'>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <label>Keywords:</label>
+                        <input type="text" class="form-control form-control-lg" name="q" placeholder="Search for news!">
+                    </div>
+                    <div class="col-sm-4">
+                        <label>Country:</label>
+                        <select class="form-control form-control-lg" name="country">
+                            <option>USA</option>
+                            <option>China</option>
+                            <option>England</option>
+                            <option>France</option>
+                            <option>Mexico</option>
+                        </select>
+                    </div>
+                </div>
             </form>
             </br>
-            <button type="button" class="btn">Generate random article</button>
+            <label>Alternatively:</label>
+            <a type="button" class="btn btn-secondary" href="./generate.html">Simulate article title using Markov chains</a>
         </div>
     </body>
 </html>
